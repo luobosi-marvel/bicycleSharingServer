@@ -7,9 +7,18 @@
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <introspection-schemas>*:bicycle_sharing</introspection-schemas>
+    </data-source>
+    <data-source name="@localhost" uuid="718b8697-5f3e-47a8-a6db-a15f39063eda">
+      <database-info product="MySQL" version="5.5.40" jdbc-version="3.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.12 ( Revision: ${bzr.revision-id} )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:bicycle_sharing,elastic_search_db</introspection-schemas>
     </data-source>
   </component>
 </project>
